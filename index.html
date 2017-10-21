@@ -10,6 +10,8 @@
         <link rel="manifest" href="site.webmanifest">
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
+        
+        <link href="https://fonts.googleapis.com/css?family=Miriam+Libre:400,700|Roboto+Mono&amp;subset=hebrew" rel="stylesheet">
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
@@ -21,7 +23,195 @@
 
         <!-- Add your site or application content here -->
         
-        <p>שלום עולם! זהו התמל 5 צלחת רותחת!</p>
+        <div class="wrapper">
+        
+        <header>
+	        
+	        <h2>קורס עיצוב קוד</h2>
+	        <p class="description">מנשר 2017</p>
+	        
+        </header>
+        
+        <article>
+	        <h1>עיצוב קוד: זכרון דברים</h1>
+	        <p>בעמוד זה יהיה סיכום של כל הדברים שנלמד בקורס. השתמשו במידע הזה כדי להיזכר בתגים ובפקודות השונות. מומלץ לשמור על העמוד פתוח בטאב כלשהו ברקע בזמן העבודה, כדי שתוכלו לחזור ולבדוק דברים לפי הצורך. קידוד נעים!</p>
+	        
+	        <h2>מונחים כלליים</h2>
+	        
+	        <table class="term-table">
+		        <thead>
+			        <tr>
+				        <th>המונח</th>
+				        <th>ההסבר</th>
+			        </tr>
+		        </thead>
+		        <tbody>
+			        <tr>
+				        <td class="term">WWW (World Wide Web)</td>
+				        <td class="explanation">ה״ווב״ - הפרוטוקול האינטרנטי לצפייה באתרי אינטרנט</td>
+			        </tr>
+			        <tr>
+				        <td class="term">HTML - HyperText Markup Language</td>
+				        <td class="explanation">שפת תיוג היפרטקסט - הדרך שבה מגדירים תוכן באתרי אינטרנט</td>
+			        </tr>
+			        <tr>
+				        <td class="term">CSS - Cascading Style Sheets</td>
+				        <td class="explanation">גיליונות עיצוב משורשרים - הדרך שבה מגדירים עיצוב באתרי אינטרנט</td>
+			        </tr>
+			        <tr>
+				        <td class="term">HTTP - HyperText Transfer Protocol</td>
+				        <td class="explanation">שם הפרוטוקול עצמו של ה-WWW</td>
+			        </tr>
+			        <tr>
+				        <td class="term">URL - Uniform Resource Locator</td>
+				        <td class="explanation">כתובת של אתר ברשת האינטרנט</td>
+			        </tr>
+			        <tr>
+				        <td class="term">JavaScript</td>
+				        <td class="explanation">שפת תכנות להגדרת התנהגות באתרי אינטרנט</td>
+			        </tr>
+			        <tr>
+				        <td class="term">Script</td>
+				        <td class="explanation">כך נקראים קבצי הקוד בג׳אווהסקריפט (או בשפות אחרות)</td>
+			        </tr>
+			        <tr>
+				        <td class="term">Server / Host</td>
+				        <td class="explanation">שרת - מחשב המנגיש אתר דרך רשת האינטרנט</td>
+			        </tr>
+			        <tr>
+				        <td class="term">Browser/ Client</td>
+				        <td class="explanation">דפדפן - תוכנה לצפייה באתרי אינטרנט (כמו גוגל כרום, ספארי, אדג׳)</td>
+			        </tr>
+			        <tr>
+				        <td class="term">Viewport</td>
+				        <td class="explanation">כלי לבדיקה ובחינת אתרי אינטרנט בחלון הדפדפן עצמו</td>
+			        </tr>
+			        <tr>
+				        <td class="term">Inspector</td>
+				        <td class="explanation">עץ האובייקטים - הדרך שבה הדפדפן מפענח את ה-HTML</td>
+			        </tr>
+			        <tr>
+				        <td class="term">DOM Tree</td>
+				        <td class="explanation">תגית HTML - כל הוראה המופיעה ברצף ה-HTML בין סימני &gt;&lt;</td>
+			        </tr>
+			        <tr>
+				        <td class="term">Attribute</td>
+				        <td class="explanation">תכונה - פרמטר שמוגדר בתגית HTML, למשל href בתגית קישור (a)</td>
+			        </tr>
+			        <tr>
+				        <td class="term">Element</td>
+				        <td class="explanation">אלמנט - כל מה שמוכל בתגית HTML, כולל התגית עצמה והתכונות שלה; אלמנטים יכולים להיות מוכלים בתוך אלמנטים אחרים (כחלק מעץ האובייקטים)</td>
+			        </tr>
+			        <tr>
+				        <td class="term">Front End</td>
+				        <td class="explanation">התוכן שמופיע באתר לקהל שנכנס אליו</td>
+			        </tr>
+			        <tr>
+				        <td class="term">Back End</td>
+				        <td class="explanation">התוכן הנגיש למנהלי האתר בלבד - למשל, ממשק הניהול</td>
+			        </tr>
+		        </tbody>
+	        </table>
+
+
+	        <h2>אלמנטים בסיסיים</h2>
+	        
+	        <table class="term-table">
+		        <thead>
+			        <tr>
+				        <th>הסבר</th>
+				        <th>נראוּת</th>
+				        <th>קוד</th>
+			        </tr>
+		        </thead>
+		        <tbody>
+			        <tr>
+				        <td class="explanation">פיסקה</td>
+				        <td class="appearance"><p>This is a paragraph</p><p>This is another paragraph</p></td>
+				        <td class="code">&lt;p&gt;This is a paragraph&lt;/p&gt;<br>&lt;p&gt;This is another paragraph&lt;/p&gt;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">הדגשה והטייה</td>
+				        <td class="appearance">This text is <b>bold</b> and this text is <i>italic</i></td>
+				        <td class="code">This text is &lt;b&gt;bold&lt;/b&gt; and this text is &lt;i&gt;italic&lt;/i&gt;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">קישור לאתר חיצוני</td>
+				        <td class="appearance">This is a <a href="http://facebook.com/">link</a> to Facebook.</td>
+				        <td class="code">This is a &lt;a href=&quot;http://facebook.com/&quot;&gt;link&lt;/a&gt; to Facebook.</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">קישור לעמוד פנימי</td>
+				        <td class="appearance"><a href="about.html">About me</a></td>
+				        <td class="code">&lt;a href=&quot;about.html&quot;&gt;About me&lt;/a&gt;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">קישור לאימייל</td>
+				        <td class="appearance">Email <a href="mailto:meir@sadan.com">me</a>!</td>
+				        <td class="code">Email &lt;a href=&quot;mailto:meir@sadan.com&quot;&gt;me&lt;/a&gt;!</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">כותרות (רמה 1 עד 6)</td>
+				        <td class="appearance"><h1>This is the Main Title</h1><h2>This is a secondary title</h2><h3>Here is a third title</h3><h6>This is the smallest title</h6></td>
+				        <td class="code">&lt;h1&gt;This is the Main Title&lt;/h1&gt;<br>&lt;h2&gt;This is a secondary title&lt;/h2&gt;<br>&lt;h3&gt;Here is a third title&lt;/h3&gt;<br>&lt;h6&gt;This is the smallest title&lt;/h6&gt;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">שבירת שורה (בתוך פיסקה)</td>
+				        <td class="appearance"><p>This sentence is<br>broken.</p></td>
+				        <td class="code">&lt;p&gt;This sentence is&lt;br&gt;broken.&lt;/p&gt;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">רשימה</td>
+				        <td class="appearance"><ul><li>This is the first item in a list</li><li>This is the second item</li><li>This is the third item</li></ul></td>
+				        <td class="code">&lt;ul&gt;<br>  &lt;li&gt;This is the first item in a list&lt;/li&gt;<br>  &lt;li&gt;This is the second item&lt;/li&gt;<br>  &lt;li&gt;This is the third item&lt;/li&gt;<br>&lt;/ul&gt;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">רשימה ממוספרת</td>
+				        <td class="appearance"><ol><li>This is the first item in a list</li><li>This is the second item</li><li>This is the third item</li></ol></td>
+				        <td class="code">&lt;ol&gt;<br>  &lt;li&gt;This is the first item in a list&lt;/li&gt;<br>  &lt;li&gt;This is the second item&lt;/li&gt;<br>  &lt;li&gt;This is the third item&lt;/li&gt;<br>&lt;/ol&gt;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">תמונה (קובץ מקומי)</td>
+				        <td class="appearance"><img src="img/bird.jpg"></td>
+				        <td class="code">&lt;img src=&quot;bird.jpg&quot;&gt;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">קו מפריד (תג בודד ללא סגירה)</td>
+				        <td class="appearance"><hr></td>
+				        <td class="code">&lt;hr&gt;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">ציטוט (פיסקה עם שוליים גדולים יותר משני הצדדים)</td>
+				        <td class="appearance"><blockquote>"Let my people go!"</blockquote></td>
+				        <td class="code">&lt;blockquote&gt;&quot;Let my people go!&quot;&lt;/blockquote&gt;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">טקסט ממורכז (עד שנלמד למרכז ב-css...)</td>
+				        <td class="appearance"><center>In the middle</center></td>
+				        <td class="code">&lt;center&gt;In the middle&lt;/center&gt;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">גוש טקסט הכולל את הרווחים ושבירות השורה הטבעיות שבו</td>
+				        <td class="appearance"><pre>
+  Should I compare
+   thee  
+       to a summer's
+  day?
+</pre></td>
+				        <td class="code">&lt;pre&gt;
+  Should I compare
+   thee  
+       to a summer's
+  day?
+&lt;/pre&gt;</td>
+			        </tr>
+		        </tbody>
+	        </table>
+	        
+        </article>
+        
+        </div>
+        
                 
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
