@@ -204,7 +204,28 @@ footer {
 	text-align: left;
 }
 
+@media (min-width: 1200px) {
+	
+	header {
+		top: 0; right: 0;
+		position: fixed;
+		width: 100%;
+		z-index: -1;
+	}
+	
+	article {
+		margin-top: 2em;
+	}
+	
+}
 
+@media (max-width: 800px) {
+	
+	.term-table-container {
+		overflow-x: auto;
+	}
+	
+}
 
 
 
