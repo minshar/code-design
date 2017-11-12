@@ -44,6 +44,10 @@
 			    <li><a href="#general_terms">מונחים כלליים</a></li>
 			    <li><a href="#html_basic">אלמנטים בסיסיים</a></li>
 			    <li><a href="#cv">כתיבת קורות חיים</a></li>
+			    <li><a href="#css_typography">CSS - טיפוגרפיה וסגנון</a></li>
+			    <li><a href="#css_units">CSS - יחידות מידה</a></li>
+			    <li><a href="#css_colors">CSS - צבעים</a></li>
+			    <li><a href="#useful_links">לינקים שימושיים</a></li>
 		    </ul>
 		        
 	        </section>
@@ -296,6 +300,242 @@ to Facebook.</td>
 	        
 	        </section>
 	             
+			<section id="css_typography">
+
+	        <h2>CSS - טיפוגרפיה וסגנון</h2>
+	        
+	        <div class="term-table-container">
+	        
+	        <table class="term-table">
+		        <thead>
+			        <tr>
+				        <th>הסבר</th>
+				        <th>אפשרויות</th>
+				        <th>קוד</th>
+			        </tr>
+		        </thead>
+		        <tbody>
+			        <tr>
+				        <td class="explanation">כיוון הטקסט</td>
+				        <td class="options">ltr / rtl</td>
+				        <td class="code">direction: rtl;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">שם הפונט</td>
+				        <td class="options">"font name", serif / sans-serif / monospace</td>
+				        <td class="code">font-family: "Arial", sans-serif;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">גודל הפונט</td>
+				        <td class="options">px / pt / em / %</td>
+				        <td class="code">font-size: 20px;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">גובה שורה (לדינג)</td>
+				        <td class="options">px / pt /em / %</td>
+				        <td class="code">line-height: 30px;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">משקל הפונט</td>
+				        <td class="options">light / normal / bold / 100–900</td>
+				        <td class="code">font-weight: bold;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">סגנון הפונט</td>
+				        <td class="options">normal / italic</td>
+				        <td class="code">font-style: italic;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">ריווח בין אותיות</td>
+				        <td class="options">px / pt / em / %</td>
+				        <td class="code">letter-spacing: 1px;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">תוספות לטקסט</td>
+				        <td class="options">none / underline / line-through</td>
+				        <td class="code">text-decoration: underline;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">צבע הטקסט</td>
+				        <td class="options">color name / #aaaaaa / rgba( 0, 0, 0, 1 )</td>
+				        <td class="code">color: red;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">צבע הרקע</td>
+				        <td class="options">color name / #aaaaaa / rgba( 0, 0, 0, 1 )</td>
+				        <td class="code">background-color: blue;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">תמונת רקע</td>
+				        <td class="options">url(filename)</td>
+				        <td class="code">background-image: url(bird.jpg);</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">חזרה תמונת הרקע</td>
+				        <td class="options">repeat / no-repeat / repeat-x / repeat-y</td>
+				        <td class="code">background-repeat: no-repeat;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">מיקום תמונת הרקע</td>
+				        <td class="options">left/center/right/% top/center/bottom/%</td>
+				        <td class="code">background-position: center center;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">גודל תמונת הרקע</td>
+				        <td class="options">px px / % / auto / cover / contain</td>
+				        <td class="code">background-size: cover;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">סגנון עבור רשימות</td>
+				        <td class="options">none / disc / circle / square / decimal / hebrew</td>
+				        <td class="code">list-style: disc;</td>
+			        </tr>
+		        </tbody>
+	        </table>
+	        
+	        </div>
+	        
+			</section>
+
+			<section id="css_units">
+
+	        <h2>CSS - יחידות מידה</h2>
+	        
+	        <div class="term-table-container">
+	        
+	        <table class="term-table">
+		        <thead>
+			        <tr>
+				        <th>הסבר</th>
+				        <th>יחידת המידה</th>
+			        </tr>
+		        </thead>
+		        <tbody>
+			        <tr>
+				        <td class="explanation">אפשר תמיד לציין 0 ללא יחידת מידה</td>
+				        <td class="code">0</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">פיקסלים - במסכי רטינה זו מכפלת פיקסלים בהתאם לרזולוציה האמיתית</td>
+				        <td class="code">px</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">פוינט - דומה לפיקסלים, מתאים יותר לפרינט</td>
+				        <td class="code">pt</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">1 ״אם״ = גודל הטקסט היחסי של האלמנט המכיל. למשל אם באלמנט המכיל גודל הטקסט הוא 16px, אז 1em = 16px</td>
+				        <td class="code">em</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">כמו em רק תמיד ביחס למסמך (ל-body)</td>
+				        <td class="code">rem</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">אחוזים, עבור טקסט זה כמו em ועבור אלמנטים זה בד״כ מרוחב העמוד או האלמנט המכיל</td>
+				        <td class="code">%</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">1/100 מרוחב ה-viewport</td>
+				        <td class="code">vw</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">1/100 מגובה ה-viewport</td>
+				        <td class="code">vh</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">ללא יחידת מידה - זה משתנה, עדיף תמיד לציין את יחידת המידה!</td>
+				        <td class="code"></td>
+			        </tr>
+		        </tbody>
+	        </table>
+	        
+	        </div>
+	        
+			</section>
+
+			<section id="css_colors">
+
+	        <h2>CSS - צבעים</h2>
+	        
+	        <div class="term-table-container">
+	        
+	        <table class="term-table">
+		        <thead>
+			        <tr>
+				        <th>הסבר</th>
+				        <th>הגדרת הצבע</th>
+			        </tr>
+		        </thead>
+		        <tbody>
+			        <tr>
+				        <td class="explanation">קוד hex של האלמנט (אפשר להעתיק מפוטושופ) - לא לשכוח את ה-#</td>
+				        <td class="code">#ffffff</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">קוד rgb סטנדרטי</td>
+				        <td class="code">rgb(255, 255, 255)</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">קוד rgb בתוספת שקיפות - ערוץ alpha מ-0 (שקוף) עד 1 (אטום)</td>
+				        <td class="code">rgba(255, 255, 255, 1)</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">קוד hsl - גוון (0-360), רוויה (0-100%), ובהירות (0-100%)</td>
+				        <td class="code">hsl(120, 100%, 100%)</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">קוד hsl בתוספת שקיפות</td>
+				        <td class="code">hsla(120, 100%, 100%, 1)</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">שמות סטנדרטיים של צבעים (<a href="https://www.w3schools.com/colors/colors_names.asp" target="_blank">רשימה</a>)</td>
+				        <td class="code">white</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">שקוף (בלתי נראה)</td>
+				        <td class="code">transparent</td>
+			        </tr>
+		        </tbody>
+	        </table>
+	        
+	        </div>
+	        
+			</section>
+
+	        <section id="useful_links">
+	        
+	        <h2>לינקים שימושיים</h2>
+	        
+	        <table class="term-table">
+		        <thead>
+			        <tr>
+				        <th>אתר</th>
+				        <th>תיאור</th>
+			        </tr>
+		        </thead>
+		        <tbody>
+			        <tr>
+				        <td class="term"><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></td>
+				        <td class="explanation">אתר עם מדריכים ורפרנסים רבים בנושאי HTML/CSS</td>
+			        </tr>
+			        <tr>
+				        <td class="term"><a href="https://css-tricks.com/guides/" target="_blank">CSS Tricks</a></td>
+				        <td class="explanation">אתר עם מדריכים מפורטים בנושאים שונים הקשורים ל-HTML/CSS</td>
+			        </tr>
+			        <tr>
+				        <td class="term"><a href="http://webtypography.net/toc" target="_blank">Elements of Typographic Style</a></td>
+				        <td class="explanation">ניסיון לכתוב מדריך טיפוגרפי לאתרי אינטרנט - מעניין</td>
+			        </tr>
+			        <tr>
+				        <td class="term"><a href="https://alistapart.com/" target="_blank">A List Apart</a></td>
+				        <td class="explanation">מגזין בנושאים שונים הקשורים לעיצוב אתרים</td>
+			        </tr>
+		        </tbody>
+	        </table>
+	        
+			</section>
+
         </article>
         
         <footer>

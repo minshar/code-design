@@ -145,6 +145,7 @@ table.term-table th {
 	background-color: #cef2ff;
 }
 
+table.term-table td.options,
 table.term-table td.term,
 table.term-table td.code {
 	font-family: "Roboto Mono", monospace;
