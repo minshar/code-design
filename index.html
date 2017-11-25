@@ -47,6 +47,12 @@
 			    <li><a href="#css_typography">CSS - טיפוגרפיה וסגנון</a></li>
 			    <li><a href="#css_units">CSS - יחידות מידה</a></li>
 			    <li><a href="#css_colors">CSS - צבעים</a></li>
+			    <li><a href="#html_generic">אלמנטים גנריים</a></li>
+			    <li><a href="#box_model">מודל הקופסה</a></li>
+			    <li><a href="#box_model_advanced">משכללים את מודל הקופסה</a></li>
+			    <li><a href="#flexbox">Flexbox</a></li>
+			    <li><a href="#absolute_positioning">CSS - מיקום אבסולוטי של אלמנטים</a></li>
+			    <li><a href="#leave_earth">כיצד לצאת את כדור הארץ</a></li>
 			    <li><a href="#useful_links">לינקים שימושיים</a></li>
 		    </ul>
 		        
@@ -503,6 +509,460 @@ to Facebook.</td>
 	        
 			</section>
 
+			<section id="html_generic">
+
+	        <h2>אלמנטים גנריים</h2>
+	        
+	        <div class="term-table-container">
+	        
+	        <table class="term-table">
+		        <thead>
+			        <tr>
+				        <th>הסבר</th>
+				        <th>נראוּת</th>
+				        <th>קוד</th>
+			        </tr>
+		        </thead>
+		        <tbody>
+			        <tr>
+				        <td class="explanation">אלמנט בלוק גנרי</td>
+				        <td class="appearance"><div>This is a block</div></td>
+				        <td class="code">&lt;div&gt;This is a block&lt;/div&gt;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">אלמנט אינליין גנרי</td>
+				        <td class="appearance"><span>This is inline</span></td>
+				        <td class="code">&lt;span&gt;This is inline&lt;/span&gt;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">אלמנטים מסוג בלוק בתוך אלמנט עוטף מסוג בלוק</td>
+				        <td class="appearance"><div class="wrap"><div>Block inside a block</div><div>Block inside a block</div></div></td>
+				        <td class="code">&lt;div class=&quot;wrap&quot;&gt;
+  &lt;div&gt;Block inside a block&lt;/div&gt;
+  &lt;div&gt;Block inside a block&lt;/div&gt;
+&lt;/div&gt;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">אלמנטים מסוג אינליין בתוך אלמנט בלוק שעוטף אותם</td>
+				        <td class="appearance"><div class="wrap">
+  <span>Inline inside a block</span>
+  <span>Another inline</span>
+</div></td>
+				        <td class="code">&lt;div class=&quot;wrap&quot;&gt;
+  &lt;span&gt;Inline inside a block&lt;/span&gt;
+  &lt;span&gt;Another inline&lt;/span&gt;
+&lt;/div&gt;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">בלוק עוטף שקיבל class בשם gallery, כדי שנוכל אח״כ לעצב אותו ב-css (וגם אימג׳ים שעטפנו בבלוקים בעלי class בשם image)</td>
+				        <td class="appearance"><div class="gallery">
+  <div class="image"><img src="img/bird.jpg"></div>
+  <div class="image"><img src="img/bird.jpg"></div>
+  <div class="image"><img src="img/bird.jpg"></div>
+</div></td>
+				        <td class="code">&lt;div class=&quot;gallery&quot;&gt;
+  &lt;div class=&quot;image&quot;&gt;
+    &lt;img src=&quot;img/bird.jpg&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;image&quot;&gt;
+    &lt;img src=&quot;img/bird.jpg&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;image&quot;&gt;
+    &lt;img src=&quot;img/bird.jpg&quot;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">שורת קישורים עטופים באלמנט בלוק גנרי בעל class בשם footer</td>
+				        <td class="appearance"><div class="footer">
+  <a href="#">link</a>
+  <a href="#">link</a>
+  <a href="#">link</a>
+</div></td>
+				        <td class="code">&lt;div class=&quot;footer&quot;&gt;
+  &lt;a href=&quot;#&quot;&gt;link&lt;/a&gt;
+  &lt;a href=&quot;#&quot;&gt;link&lt;/a&gt;
+  &lt;a href=&quot;#&quot;&gt;link&lt;/a&gt;
+&lt;/div&gt;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">אפשר גם להוסיף class לאלמנטים לא גנריים!</td>
+				        <td class="appearance"><p class="main">This is a main paragraph</p></td>
+				        <td class="code">&lt;p class=&quot;main&quot;&gt;This is a main paragraph&lt;/p&gt;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">רשימה שמקבלת class של menu, נוכל לעצב אותה אח״כ כתפריט</td>
+				        <td class="appearance"><ul class="menu">
+  <li><a href="#">About</a></li>
+  <li><a href="#">Portfolio</a></li>
+  <li><a href="#">Contact</a></li>
+</ul></td>
+				        <td class="code">&lt;ul class=&quot;menu&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Portfolio&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</td>
+			        </tr>
+		        </tbody>
+	        </table>
+	        
+	        </div>
+	        
+			</section>
+
+			<section id="box_model">
+
+	        <h2>מודל הקופסה</h2>
+	        
+	        <div class="term-table-container">
+	        
+	        <table class="term-table">
+		        <thead>
+			        <tr>
+				        <th>הסבר</th>
+				        <th>אפשרויות</th>
+				        <th>קוד</th>
+			        </tr>
+		        </thead>
+		        <tbody>
+			        <tr>
+				        <td class="explanation">שוליים חיצוניים של כל צד</td>
+				        <td class="options">px / pt / em / % width<br>
+vw - 1/100 viewport width<br>
+vh - 1/100 viewport height</td>
+				        <td class="code">margin-top: 10px;
+margin-bottom: 1em;
+margin-left: 20px;
+margin-right: 20%;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">שוליים חיצוניים (קוד משולב)</td>
+				        <td class="options">px / pt / em / % width / auto<br>
+[top-bottom] [left-right]<br>
+[top] [left] [bottom] [right]</td>
+				        <td class="code">margin: 10px;
+margin: 10px 20px;
+margin: 10px 5px 20px 10px;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">שוליים פנימיים של כל צד</td>
+				        <td class="options">px / pt / em / % width<br>
+vw - 1/100 viewport width<br>
+vh - 1/100 viewport height</td>
+				        <td class="code">padding-top: 10px;
+padding-bottom: 1em;
+padding-left: 20px;
+padding-right: 20%;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">שוליים פנימיים (קוד משולב)</td>
+				        <td class="options">px / pt / em / % width<br>
+[top-bottom] [left-right]<br>
+[top] [left] [bottom] [right]</td>
+				        <td class="code">padding: 10px;
+padding: 10px 20px;
+padding: 10px 5px 20px 10px;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">עובי הקו</td>
+				        <td class="options">px / pt / em / % / ...</td>
+				        <td class="code">border-width: 1px;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">סגנון הקו</td>
+				        <td class="options">none / solid / dashed / dotted</td>
+				        <td class="code">border-style: solid;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">צבע הקו</td>
+				        <td class="options">color name / #c0e234 / ...</td>
+				        <td class="code">border-color: black;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">מאפייני קו (קוד משולב)</td>
+				        <td class="options">[width] [style] [color]</td>
+				        <td class="code">border: 1px solid black;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">רוחב האלמנט</td>
+				        <td class="options">px / pt / em / % / ...</td>
+				        <td class="code">width: 200px;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">גובה האלמנט</td>
+				        <td class="options">px / pt / em / % / ...</td>
+				        <td class="code">height: 200px;</td>
+			        </tr>
+		        </tbody>
+	        </table>
+	        
+	        </div>
+	        
+			</section>
+			
+			<section id="box_model_advanced">
+
+	        <h2>משכללים את מודל הקופסה</h2>
+	        
+	        <div class="term-table-container">
+	        
+	        <table class="term-table">
+		        <thead>
+			        <tr>
+				        <th>הסבר</th>
+				        <th>אפשרויות</th>
+				        <th>קוד</th>
+			        </tr>
+		        </thead>
+		        <tbody>
+			        <tr>
+				        <td class="explanation">הדרך שבה האלמנט מוצג</td>
+				        <td class="options">inline / block / inline-block</td>
+				        <td class="code">display: block;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">מה נכלל בגודל האלמנט המוגדר:<br>
+content-box - רק תוכן האלמנט<br>
+border-box - התוכן כולל הפאדינג והבורדר</td>
+				        <td class="options">content-box / border-box</td>
+				        <td class="code">box-sizing: border-box;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">מה רואים אם התוכן גדול מגודל האלמנט<br>
+visible - התוכן נראה מחוץ לגודל<br>
+hidden - התוכן נחתך<br>
+scroll - גלילה פנימית תמיד<br>
+auto - גלילה פנימית אם יש צורך</td>
+				        <td class="options">visible / hidden / scroll / auto</td>
+				        <td class="code">overflow: hidden;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">כמו overflow רק עבור ציר הרוחב</td>
+				        <td class="options">visible / hidden / scroll / auto</td>
+				        <td class="code">overflow-x: auto;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">כמו overflow רק עבור ציר הגובה</td>
+				        <td class="options">visible / hidden / scroll / auto</td>
+				        <td class="code">overflow-y: scroll;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">רוחב מרבי של האלמנט</td>
+				        <td class="options">px / pt / em / % / none</td>
+				        <td class="code">max-width: none;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">גובה מרבי של האלמנט</td>
+				        <td class="options">px / pt / em / % / none</td>
+				        <td class="code">max-height: 400px;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">רוחב מינימלי של האלמנט</td>
+				        <td class="options">px / pt / em / % / auto</td>
+				        <td class="code">min-width: auto;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">גובה מינימלי של האלמנט</td>
+				        <td class="options">px / pt / em / % / auto</td>
+				        <td class="code">min-height: 0;</td>
+			        </tr>
+		        </tbody>
+	        </table>
+	        
+	        </div>
+	        
+			</section>			
+
+			<section id="flexbox">
+
+	        <h2>Flexbox</h2>
+	        
+		    <h3>תכונות שנותנים לאלמנט ה״הורה״:</h3>
+	        
+	        <div class="term-table-container">
+		        
+	        <table class="term-table">
+		        <thead>
+			        <tr>
+				        <th>הסבר</th>
+				        <th>אפשרויות</th>
+				        <th>קוד</th>
+			        </tr>
+		        </thead>
+		        <tbody>
+			        <tr>
+				        <td class="explanation">מפעיל את מודל ה-flexbox על כל ה״ילדים״ הישירים של האלמנט העוטף</td>
+				        <td class="options"></td>
+				        <td class="code">display: flex;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">יישור אופקי - לקצה התחילי (ימין בעברית, שמאל באנגלית), לקצה הסופי, למרכז, או ריווח שווה בין האלמנטים באופנים שונים</td>
+				        <td class="options">flex-start / flex-end / center / space-between / space-around / space-evenly</td>
+				        <td class="code">justify-content: center;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">יישור אנכי של האייטמים - לקצה העליון, התחתון, למרכז, למתוח את כל האלמנטים או לפי קו הבסיס של הטקסטים</td>
+				        <td class="options">flex-start / flex-end / center / stretch / baseline</td>
+				        <td class="code">align-items: center;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">יישור אנכי של הקבוצה - מה לעשות עם החלל שנותר (אם נותר)? ליישר למעלה, למטה, למרכז או לרווח באופן שווה</td>
+				        <td class="options">flex-start / flex-end / center / stretch / space-between / space-around</td>
+				        <td class="code">align-content: center;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">האם לאפשר שורות מרובות (wrap) או לסדר את כל האלמנטים בשורה אחת (nowrap)?</td>
+				        <td class="options">wrap / nowrap / wrap-reverse</td>
+				        <td class="code">flex-wrap: wrap;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">להפוך את הכיוון - לסדר בטור במקום בשורה (או בטורים/שורות מהסוף להתחלה)?</td>
+				        <td class="options">row / row-reverse / column / column-reverse</td>
+				        <td class="code">flex-direction: column;</td>
+			        </tr>
+		        </tbody>
+	        </table>
+	        
+	        </div>
+
+		    <h3>תכונות שנותנים ל״ילדים״:</h3>
+	        
+	        <div class="term-table-container">
+		        
+	        <table class="term-table">
+		        <thead>
+			        <tr>
+				        <th>הסבר</th>
+				        <th>אפשרויות</th>
+				        <th>קוד</th>
+			        </tr>
+		        </thead>
+		        <tbody>
+			        <tr>
+				        <td class="explanation">כמה להגדיל/להקטין/מה הגודל ההתחלתי של האלמנט? זה בעצם פירוק של שלושת התכונות הבאות:</td>
+				        <td class="options">none / [number] [number] [size]</td>
+				        <td class="code">flex: 1;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">בכמה להרחיב את האלמנט (ביחס לאחרים)</td>
+				        <td class="options">[number]</td>
+				        <td class="code">flex-grow: 2;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">בכמה להצר את האלמנט (ביחס לאחרים)</td>
+				        <td class="options">[number]</td>
+				        <td class="code">flex-shrink: 3;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">מה הגודל ההתחלתי של האלמנט לפני השינויים</td>
+				        <td class="options">px / em / % / auto</td>
+				        <td class="code">flex-basis: 200px;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">באיזה סדר להציג את האלמנט (ביחס לאחרים)</td>
+				        <td class="options">[number]</td>
+				        <td class="code">order: 1;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">לאן ליישר את האלמנט (אם רוצים ליישר אותו באופן שונה משאר האלמנטים בשורה)</td>
+				        <td class="options">auto / flex-start / flex-end / center / baseline / stretch</td>
+				        <td class="code">align-self: center;</td>
+			        </tr>
+		        </tbody>
+	        </table>
+	        
+	        </div>
+	        
+			</section>			
+
+			<section id="absolute_positioning">
+
+	        <h2>CSS - מיקום אבסולוטי של אלמנטים</h2>
+	        
+	        <div class="term-table-container">
+	        
+	        <table class="term-table">
+		        <thead>
+			        <tr>
+				        <th>הסבר</th>
+				        <th>אפשרויות</th>
+				        <th>קוד</th>
+			        </tr>
+		        </thead>
+		        <tbody>
+			        <tr>
+				        <td class="explanation">מיקום סטטי (רגיל) של אלמנט - בררת המחדל</td>
+				        <td class="options"></td>
+				        <td class="code">position: static;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">מיקום אבסולוטי של אלמנט - ביחס לחלון או לאלמנט הרלטיבי העוטף</td>
+				        <td class="options"></td>
+				        <td class="code">position: absolute;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">מיקום רלטיבי (יחסי) - ביחס לעצמו וגם כמשפיע על האלמנטים שבתוכו</td>
+				        <td class="options"></td>
+				        <td class="code">position: relative;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">מיקום קבוע - במנותק מגלילת החלון</td>
+				        <td class="options"></td>
+				        <td class="code">position: fixed;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">מרחק מקצוות העמוד, או מהאלמנט המקיף<br>(אם האלמנט נמצא בתוך אלמנט עם מיקום רלטיבי)</td>
+				        <td class="options">px / pt / em / % / ...</td>
+				        <td class="code">top: 10px;
+left: 20px;
+right: 30px;
+bottom: 40px;</td>
+			        </tr>
+			        <tr>
+				        <td class="explanation">ככל שהמספר גבוה יותר, האלמנט עליון יותר</td>
+				        <td class="options">[number]</td>
+				        <td class="code">z-index: 100;</td>
+			        </tr>
+		        </tbody>
+	        </table>
+	        
+	        </div>
+	        
+			</section>			
+
+	        <section id="leave_earth" class="poem">
+	        
+	        <h2>כיצד לצאת את כדור הארץ</h2>
+	        
+	        <ol>
+		        
+		        <li>טלפנו אל נאס״א. מספר הטלפון הוא <span dir="ltr">+1-713-483-3111</span>.<br>
+הסבירו שחשוב לכם מאוד לצאת בהקדם האפשרי.</li>
+
+				<li>אם הם לא יהיו מוכנים לשתף פעולה, טלפנו לידיד - אם יש<br>
+לכם כזה - בבית הלבן, <span dir="ltr">+1-202-456-1414</span>, ובקשו ממנו לומר<br>
+מילה טובה עליכם באוזני הטיפוסים האלה של נאס״א.</li>
+
+				<li>אם אין לכם שום ידיד בבית הלבן, טלפנו לקרמלין (המספר<br>
+הוא <span dir="ltr">+7-495-624-5503</span>). גם להם אין ידידים בבית הלבן, או<br>
+לפחות, לא ידידי אמת, אבל נדמה לי שיש להם קצת השפעה.<br>
+אז למה לא לנסות.</li>
+
+				<li>אם גם זה לא עוזר, טלפנו לאפיפיור ובקשו הנחיה רוחנית.<br>
+מספר הטלפון שלו הוא <span dir="ltr">+39-06-698-84857</span>, ועד כמה שאני<br>
+מבין, מרכזת הטלפון שלו אינה טועה לעולם.</li>
+
+				<li>אם נכשלתם בכל הנסיונות הללו, הניפו יד לעצור צלחת<br>
+מעופפת חולפת והסבירו שאתם פשוט מוכרחים להסתלק<br>
+מכאן לפני שיגיע חשבון הטלפון שלכם.</li>
+
+	        </ol>
+	        
+<p>
+דאגלס אדמס, לוס אנג׳לס 1983 ולונדון 1985/6	        </p>
+	        
+	        </section>
+
 	        <section id="useful_links">
 	        
 	        <h2>לינקים שימושיים</h2>
@@ -535,7 +995,7 @@ to Facebook.</td>
 	        </table>
 	        
 			</section>
-
+			
         </article>
         
         <footer>
