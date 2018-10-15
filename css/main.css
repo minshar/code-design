@@ -153,6 +153,10 @@ table.term-table td.code {
 	line-height: 1.4rem;
 }
 
+table.term-table.nowrap td {
+    white-space: nowrap;
+}
+
 table.term-table td.code {
 	white-space: pre;
 }
@@ -208,6 +212,54 @@ footer {
 	padding: 0.3em 0.5em 3em;
 	text-align: left;
 }
+
+.term-area {
+    direction: ltr;
+    position: relative;
+    border: 1px solid #c0c0c0;
+    padding: 1em 0.5em 2em;
+    text-align: center;
+    font-size: 2em;
+    margin: 1em 0;
+    white-space: nowrap;
+    overflow: auto;
+}
+
+.term-element {
+    position: relative;
+    margin: 0.3em 0.1em 1em;
+    font-family: "Roboto Mono";
+}
+
+.term-element {
+    border: 1px dashed #c0c0c0;
+}
+
+
+.term-body {
+    padding: 0.5em 0 1em;
+}
+
+.term-element-meta {
+    direction: rtl;
+    position: absolute;
+    bottom: -1.5em; left: 0; right: 0;
+    font-size: 0.5em;
+    font-family: "Miriam Libre";
+}
+
+.term-body-meta {
+    direction: rtl;
+    position: absolute;
+    font-size: 0.5em;
+    font-family: "Miriam Libre";
+    right: 0; bottom: 0; left: 0;
+    padding: 0.3em 0.5em;
+    background-color: #cef2ff;
+    border-top: 1px solid #c0c0c0;
+}
+
+
 
 @media (min-width: 1200px) {
 	
