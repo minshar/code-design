@@ -179,6 +179,16 @@ table.term-table .explanation {
 	direction: rtl;
 }
 
+table.term-table .illustration {
+    min-width: 320px;
+    width: 50%;
+}
+
+table.term-table .illustration img {
+    display: block;
+    max-width: 100%;
+}
+
 code {
 	font-family: "Roboto Mono", monospace;
 }
