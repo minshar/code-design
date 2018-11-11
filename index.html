@@ -56,9 +56,9 @@
 			    <li><a href="#flexbox">Flexbox</a></li>
 			    <li><a href="#absolute_positioning">CSS - מיקום אבסולוטי של אלמנטים</a></li>
 			    <!--<li><a href="#leave_earth">כיצד לצאת את כדור הארץ</a></li>-->
-			    <li><a href="#website_structure">מבנה תיקיית אתר</a></li>
 			    <li><a href="#iframe">iframe - אתר בתוך אתר</a></li>
 			    <!--<li><a href="#libraries">הערות קצרות על אמנות ואופן סידור הספרים</a></li>-->
+			    <li><a href="#website_structure">מבנה תיקיית אתר</a></li>
 			    <li><a href="#general_terms">מונחים כלליים</a></li>
 			    <li><a href="#useful_links">לינקים שימושיים</a></li>
 		    </ul>
@@ -386,88 +386,6 @@ to Facebook.</td>
 	        
 	        -->
 
-			<section id="website_structure">
-
-				<h2>מבנה תיקיית אתר</h2>
-				
-				<div class="term-table-container">
-				
-				<table class="term-table">
-					<thead>
-						<tr>
-							<th>הסבר</th>
-							<th>קובץ</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td class="explanation">קובץ ה-HTML הראשי</td>
-							<td class="code">index.html</td>
-						</tr>
-						<tr>
-							<td class="explanation">עמודים נוספים באתר</td>
-							<td class="code">about.html<br>contact.html</td>
-						</tr>
-						<tr>
-							<td class="explanation">תיקייה עבור קבצי ה-css</td>
-							<td class="code">css/</td>
-						</tr>
-						<tr>
-							<td class="explanation">קובץ ה-css הראשי</td>
-							<td class="code">  style.css</td>
-						</tr>
-						<tr>
-							<td class="explanation">קובץ ה-css של עמוד מסוים (אם צריך)</td>
-							<td class="code">  about.css</td>
-						</tr>
-						<tr>
-							<td class="explanation">תיקייה עבור קבצי הג׳אווהסקריפט</td>
-							<td class="code">js/</td>
-						</tr>
-						<tr>
-							<td class="explanation">קובץ הג׳אווהסקריפט הראשי</td>
-							<td class="code">  main.js</td>
-						</tr>
-						<tr>
-							<td class="explanation">ג׳אווהסקריפט של עמוד מסוים (אם צריך)</td>
-							<td class="code">  contact.js</td>
-						</tr>
-						<tr>
-							<td class="explanation">תיקיית התמונות</td>
-							<td class="code">images/
-	  bird.jpg
-	  kitty.jpg
-	  logo.png</td>
-						</tr>
-						<tr>
-							<td class="explanation">תיקיית פונטים (אם יש)</td>
-							<td class="code">fonts/</td>
-						</tr>
-						<tr>
-							<td class="explanation">תיקיית וידאו (אם יש)</td>
-							<td class="code">videos/</td>
-						</tr>
-						<tr>
-							<td class="explanation">אייקון מזהה</td>
-							<td class="code">favicon.ico</td>
-						</tr>
-						<tr>
-							<td class="explanation">סינון רובוטים (למשל גוגל)</td>
-							<td class="code">robots.txt</td>
-						</tr>
-					</tbody>
-				</table>
-				
-				<ul>
-					<li>יש לתת שמות לקבצים באנגלית בלבד, להחליף רווחים במקף או בקו תחתי, ולכתוב אך ורק באותיות קטנות!<br>
-		לדוגמה, את שם הקובץ Cute Kitty.JPG יש להחליף ל-cute_kitty.jpg</li>
-		<li>כדאי להוריד פתרון מוכן, למשל <a href="http://html5boilerplate.com/" target="_blank">html5boilerplate.com</a> - מבנה אתר מסודר המגיע עם כל הקבצים והתיקיות</li>
-		<li>את העמודים הנוספים באתר אפשר למקם בתת־תיקיות, למשל תת־תיקייה בשם about ובתוכה קובץ index.html</li>
-		</ul>
-				
-				</div>
-				
-				</section>		
 				
 				
 			<section id="html_structure_complex">
@@ -520,8 +438,47 @@ to Facebook.</td>
 				
 				</div>
 				
-				</section>	
-	
+				</section>
+
+			<section>
+
+				<h2>CSS לדוגמה</h2>
+
+				<div class="term-table-container">
+				
+						<table class="term-table nowrap">
+							<thead>
+								<tr>
+									<th>הסבר</th>
+									<th>קוד</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="explanation">ציון שם האלמנט שאליו מתייחסים<br>
+פונט - רשימת פונטים מסודרת לפי עדיפות<br>
+משקל הפונט<br>
+גודל הפונט<br>
+גובה השורה (לדינג)<br>
+יישור בלוק<br>
+סגירת הוראות העיצוב של האלמנט
+									</td>
+									<td class="code">p {
+	font-family: "Verdana", "Arial", sans-serif;
+	font-weight: bold;
+	font-size: 1.2em;
+	line-height: 1.5;
+	text-align: justify;
+}					        
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						
+						</div>
+		
+					</section>
+				
 			<section id="css_typography">
 
 	        <h2>CSS - טיפוגרפיה וסגנון</h2>
@@ -1320,6 +1277,89 @@ bottom: 40px;</td>
 	        </div>
 	        
 			</section>			
+
+			<section id="website_structure">
+
+				<h2>מבנה תיקיית אתר</h2>
+				
+				<div class="term-table-container">
+				
+				<table class="term-table">
+					<thead>
+						<tr>
+							<th>הסבר</th>
+							<th>קובץ</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="explanation">קובץ ה-HTML הראשי</td>
+							<td class="code">index.html</td>
+						</tr>
+						<tr>
+							<td class="explanation">עמודים נוספים באתר</td>
+							<td class="code">about.html<br>contact.html</td>
+						</tr>
+						<tr>
+							<td class="explanation">תיקייה עבור קבצי ה-css</td>
+							<td class="code">css/</td>
+						</tr>
+						<tr>
+							<td class="explanation">קובץ ה-css הראשי</td>
+							<td class="code">  style.css</td>
+						</tr>
+						<tr>
+							<td class="explanation">קובץ ה-css של עמוד מסוים (אם צריך)</td>
+							<td class="code">  about.css</td>
+						</tr>
+						<tr>
+							<td class="explanation">תיקייה עבור קבצי הג׳אווהסקריפט</td>
+							<td class="code">js/</td>
+						</tr>
+						<tr>
+							<td class="explanation">קובץ הג׳אווהסקריפט הראשי</td>
+							<td class="code">  main.js</td>
+						</tr>
+						<tr>
+							<td class="explanation">ג׳אווהסקריפט של עמוד מסוים (אם צריך)</td>
+							<td class="code">  contact.js</td>
+						</tr>
+						<tr>
+							<td class="explanation">תיקיית התמונות</td>
+							<td class="code">images/
+	  bird.jpg
+	  kitty.jpg
+	  logo.png</td>
+						</tr>
+						<tr>
+							<td class="explanation">תיקיית פונטים (אם יש)</td>
+							<td class="code">fonts/</td>
+						</tr>
+						<tr>
+							<td class="explanation">תיקיית וידאו (אם יש)</td>
+							<td class="code">videos/</td>
+						</tr>
+						<tr>
+							<td class="explanation">אייקון מזהה</td>
+							<td class="code">favicon.ico</td>
+						</tr>
+						<tr>
+							<td class="explanation">סינון רובוטים (למשל גוגל)</td>
+							<td class="code">robots.txt</td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<ul>
+					<li>יש לתת שמות לקבצים באנגלית בלבד, להחליף רווחים במקף או בקו תחתי, ולכתוב אך ורק באותיות קטנות!<br>
+		לדוגמה, את שם הקובץ Cute Kitty.JPG יש להחליף ל-cute_kitty.jpg</li>
+		<li>כדאי להוריד פתרון מוכן, למשל <a href="http://html5boilerplate.com/" target="_blank">html5boilerplate.com</a> - מבנה אתר מסודר המגיע עם כל הקבצים והתיקיות</li>
+		<li>את העמודים הנוספים באתר אפשר למקם בתת־תיקיות, למשל תת־תיקייה בשם about ובתוכה קובץ index.html</li>
+		</ul>
+				
+				</div>
+				
+				</section>		
 
 	        <section id="general_terms">
 	        
